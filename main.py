@@ -67,7 +67,7 @@ class HandMagicApp:
         self.last_time = now
         if dt > 0:
             instant_fps = 1.0 / dt
-            self.fps = self.fps * 0.9 + instant_fps * 0.1
+            self.fps = self.fps * 0.8 + instant_fps * 0.1
         return dt
 
     def _draw_ui(self, img, num_hands, effect_name):
